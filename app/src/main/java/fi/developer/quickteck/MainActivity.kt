@@ -11,7 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import fi.developer.quickteck.ui.navigation.AppNavGraph
+import fi.developer.quickteck.ui.navigation.NavigationDrawer
 import fi.developer.quickteck.ui.theme.QuickTeckTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
             QuickTeckTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Box(Modifier.padding(innerPadding)){
-                        AppNavGraph()
+                        NavigationDrawer()
                     }
                 }
             }
@@ -34,5 +34,5 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun ButtonListScreenPreview() {
-    AppNavGraph()
+    NavigationDrawer()
 }
